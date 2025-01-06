@@ -7,6 +7,7 @@ public class Calculator{
 		while(true){
 			System.out.println("\nWelcome to the Calculator");
 			System.out.println("Enter '+' for Addition");
+			System.out.println("Enter '-' for Subtraction");
 			System.out.println("Enter 'x' to Exit");
 			System.out.println("Choose an operation: ");
 			
@@ -26,6 +27,9 @@ public class Calculator{
 			switch(choice){
 				case '+':
 					System.out.println("Result: " + (num1 + num2));
+					break;
+				case '-':
+					System.out.println("Result: " + (num1 - num2));
 					break;
 				default:
 					System.out.println("Invalid choice. Please choice a valid operation.");
